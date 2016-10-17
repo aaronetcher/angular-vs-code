@@ -1,0 +1,14 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>NAME</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="#item of items" (click)="onSelect(item)">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+        </tr>
+    </tbody>
+</table>
